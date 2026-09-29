@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Aaron</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header"></div>
+
+  <main class="wrap">
+    <div class="page-head">
+      <span class="eyebrow">Contact</span>
+      <h1>Let's <span class="grad">talk.</span></h1>
+      <p>I'm open to Lead or Group PM roles in AI. Recruiters and hiring managers, please reach out.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-list">
+        <a class="contact-item" href="mailto:Aaron3vp@gmail.com" style="--s: var(--primary-soft); --c: var(--primary)">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm10 8.2L3.4 6H3v.6l9 6.5 9-6.5V6h-.4L12 12.2z"/></svg></div>
+          <div><small>Email</small><span>Aaron3vp@gmail.com</span></div>
+        </a>
+        <a class="contact-item" href="tel:+13124462510" style="--s: var(--mint-soft); --c: var(--mint)">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.4 11.4 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg></div>
+          <div><small>Phone</small><span>312-446-2510</span></div>
+        </a>
+        <a class="contact-item" href="https://www.linkedin.com/in/aaronvpa" target="_blank" rel="noopener" style="--s: var(--accent-soft); --c: var(--accent)">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></div>
+          <div><small>LinkedIn</small><span>linkedin.com/in/aaronvpa</span></div>
+        </a>
+        <div class="contact-item" style="--s: var(--amber-soft); --c: var(--amber)">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg></div>
+          <div><small>Location</small><span>San Francisco, CA</span><small style="color: var(--mint); font-weight: 600; margin-top: 2px">Open to work · flexible to relocate anywhere in the USA</small></div>
+        </div>
+      </div>
+
+      <form id="contact-form">
+        <label>Name <input name="name" required></label>
+        <label>Email <input name="email" type="email" required></label>
+        <label>Company &amp; role <input name="company" placeholder="e.g. Acme — Senior PM, AI Platform"></label>
+        <label>Message <textarea name="message" required></textarea></label>
+        <div><button class="btn btn-primary" type="submit">Send message</button></div>
+        <p class="form-note" id="form-note" hidden></p>
+      </form>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+  <script src="script.js"></script>
+  <script>
+    // No backend: open the visitor's mail client with the message prefilled.
+    document.getElementById("contact-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const f = new FormData(e.target);
+      const company = f.get("company") ? ` (${f.get("company")})` : "";
+      const subject = encodeURIComponent(`Hello from ${f.get("name")}${company}`);
+      const body = encodeURIComponent(`${f.get("message")}\n\n— ${f.get("name")} (${f.get("email")})`);
+      location.href = `mailto:${SITE.email}?subject=${subject}&body=${body}`;
+      const note = document.getElementById("form-note");
+      note.textContent = "Thanks! Your email app should open so you can send the message.";
+      note.hidden = false;
+    });
+  </script>
+</body>
+</html>

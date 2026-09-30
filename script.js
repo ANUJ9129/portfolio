@@ -23,7 +23,8 @@ document.getElementById("header").outerHTML = `
       <nav class="nav">
         ${link("index.html", "About")}
         ${link("projects.html", "My Work")}
-        ${link("case-studies.html", "Projects")}
+        ${link("case-studies.html", "Case Studies")}
+        ${link("my-projects.html", "Projects")}
         ${link("contact.html", "Contact")}
         <a href="${SITE.linkedin}" target="_blank" rel="noopener" class="icon-link" aria-label="LinkedIn">${icons.linkedin}</a>
         <a href="contact.html" class="btn btn-primary btn-sm">Let's talk</a>

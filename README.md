@@ -6,7 +6,7 @@ Personal portfolio of Aaron, Lead Product Manager building AI agents and LLM-pow
 
 ## Highlights
 
-- **$3M** in cost savings from LLM-powered workflows at CVS Health
+- **$1M** saved so far with AI agents in healthcare, with **$3M** projected
 - **+15%** prescription conversion from a 0→1 drug price search
 - **−50%** manual effort and **$190K+** revenue as founding PM at Thelios
 - **+55%** sales growth from a B2C → B2B repositioning at BCG
@@ -17,7 +17,8 @@ Personal portfolio of Aaron, Lead Product Manager building AI agents and LLM-pow
 |---|---|
 | [About](https://anuj9129.github.io/portfolio/) | Intro, impact numbers, about me, my work, skills, education |
 | [My Work](https://anuj9129.github.io/portfolio/projects.html) | Problem → What I did → Result for each product |
-| [Projects](https://anuj9129.github.io/portfolio/case-studies.html) | In-depth write-ups (coming soon) |
+| [Case Studies](https://anuj9129.github.io/portfolio/case-studies.html) | In-depth write-ups (coming soon) |
+| [Projects](https://anuj9129.github.io/portfolio/my-projects.html) | Hands-on builds and prototypes (coming soon) |
 | [Contact](https://anuj9129.github.io/portfolio/contact.html) | Email, phone, LinkedIn, contact form |
 
 ## Contact

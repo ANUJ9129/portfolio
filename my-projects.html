@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Aaron</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header"></div>
+
+  <main class="wrap">
+    <div class="page-head">
+      <span class="eyebrow">Projects</span>
+      <h1>Things I've <span class="grad">built and shipped.</span></h1>
+      <p>Hands-on builds, prototypes, and experiments with AI and data.</p>
+    </div>
+
+    <!--
+      To add a project, copy this block and replace a "soon" card below:
+
+      <article class="case reveal c-indigo">
+        <div class="meta">Type · Year</div>
+        <h3>Project title</h3>
+        <div class="tags"><span class="tag">Tag</span></div>
+        <dl>
+          <div><dt>What it is</dt><dd>...</dd></div>
+          <div><dt>How I built it</dt><dd>...</dd></div>
+        </dl>
+        <div class="result"><strong>Live</strong><span><a href="#">View project →</a></span></div>
+      </article>
+    -->
+    <div class="cases" style="margin-top:48px">
+      <article class="case reveal c-indigo" id="ai-customer-support-copilot">
+        <div class="meta">Personal project · AI Agents</div>
+        <h3>AI customer support copilot</h3>
+        <div class="tags"><span class="tag">RAG</span><span class="tag">AI Agents</span><span class="tag">AI Evaluation</span><span class="tag">n8n</span><span class="tag">Gemini</span><span class="tag">Supabase</span></div>
+        <dl>
+          <div><dt>What it is</dt><dd>A copilot for support agents. It reads a customer message, looks up the account and company policies, drafts a grounded reply, and proposes actions like refunds that only happen after a person approves.</dd></div>
+          <div><dt>How I built it</dt><dd>Ten phases, each with measured results: evals, RAG, tools with human approval, a billing agent that pauses for sign-off, churn prediction, analytics, and security testing. I wrote down 74 product decisions and the reason for each.</dd></div>
+        </dl>
+        <div class="result"><strong>94%</strong><span>label accuracy · 14/14 security tests passed</span></div>
+        <p style="margin:18px 0 0"><a href="https://github.com/ANUJ9129/ai-customer-support-copilot" target="_blank" rel="noopener" class="btn btn-ghost">View on GitHub →</a></p>
+      </article>
+      <div class="case soon reveal">
+        <div class="meta">Coming soon</div>
+        <h3>Project #2</h3>
+        <p>A working prototype, with a link to try it.</p>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="cta">
+        <h2>Want a walkthrough?</h2>
+        <p>Happy to demo any of these on a call.</p>
+        <div class="hero-ctas">
+          <a href="contact.html" class="btn btn-primary">Get in touch</a>
+          <a href="case-studies.html" class="btn btn-ghost">Read the case studies</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+  <script src="script.js"></script>
+</body>
+</html>

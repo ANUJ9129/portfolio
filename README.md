@@ -17,7 +17,7 @@ Personal portfolio of Aaron, Lead Product Manager building AI agents and LLM-pow
 |---|---|
 | [About](https://anuj9129.github.io/portfolio/) | Intro, impact numbers, about me, my work, skills, education |
 | [My Work](https://anuj9129.github.io/portfolio/projects.html) | Problem → What I did → Result for each product |
-| [Case Studies](https://anuj9129.github.io/portfolio/case-studies.html) | In-depth write-ups (coming soon) |
+| [Projects](https://anuj9129.github.io/portfolio/case-studies.html) | In-depth write-ups (coming soon) |
 | [Contact](https://anuj9129.github.io/portfolio/contact.html) | Email, phone, LinkedIn, contact form |
 
 ## Contact
